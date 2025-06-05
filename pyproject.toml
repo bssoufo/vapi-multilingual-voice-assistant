@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "vapi-multilingual-voice-assistant"
+version = "0.1.0"
+description = "Vapi agents for a dental clinic with multi-language support."
+authors = ["Bruno Soufo <bssoufo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "vapi-dental-clinic"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+pydantic = "^1.10.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
